@@ -14,7 +14,7 @@ def init_db():
             location TEXT,
             source TEXT,
             posted_at TEXT,
-            send_to_telegram BOOLEAN DEFAULT FALSE,
+            send_to_telegram BOOLEAN DEFAULT FALSE
         )
     ''')
     conn.commit()
@@ -31,7 +31,7 @@ def is_new_job(job_id):
 def save_job(job):
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute("INSERT INTO jobs (id, title, company, link, salary, location source, posted_at, send_to_telegram) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-              (job["id"], job["title"], job["company"], job["link"], job["salary"], job["location"], job["send_to_telegram"], job["source"], job["posted"]))
+    c.execute("INSERT INTO jobs (id, title, company, link, salary, location, source, posted_at, send_to_telegram) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+              (job["id"], job["title"], job["company"], job["link"], job["salary"], job["location"], job["source"], job["posted"], job["send_to_telegram"]))
     conn.commit()
     conn.close()
