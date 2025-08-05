@@ -15,7 +15,7 @@ A smart job scraper that monitors RemoteOK for new remote job opportunities and 
 ## 🗺️ Roadmap
 
 ### Phase 1: Multi-Platform Support 🚀
-- [ ] **WeWorkRemotely** - Add scraper for WeWorkRemotely.com
+- [✔️] **WeWorkRemotely** - Add scraper for WeWorkRemotely.com
 - [ ] **Stack Overflow Jobs** - Integrate Stack Overflow job listings
 - [ ] **LinkedIn Jobs** - Add LinkedIn remote job monitoring
 - [ ] **Indeed Remote** - Scrape Indeed for remote positions
